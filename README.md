@@ -46,15 +46,6 @@ This is a **work-in-progress** learning repo — I’ll be adding new folders, f
 
 ---
 
-## 📸 Screenshots (Optional)
-
-> You can add screenshots of some of your projects like:
-> - Weather app UI
-> - Spotify clone UI
-> Just upload image and link like:
-> `![Screenshot](Weather-app/screenshot.png)`
-
----
 
 ## 🤝 Contributions
 
@@ -65,7 +56,7 @@ This repo is mainly for my personal learning, but feel free to explore, give sug
 ## 📫 Contact
 
 Yash Karande  
-📧 yash@example.com (replace with real email if public)
+📧 yashkarande4240@gmail.com 
 
 ---
 
