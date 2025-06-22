@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let price = 400;
+         let user = {
+            'user-name': "John",
+            id: 17,
+            age: 40,
+            price: price
+            displayPrice: function(){
+                return `$${this.price}`;
+            }
+        };
+
+        // De-structuring
+        // let age = user.age can be written as ,
+        // let {age, id} = user;
+        // console.log(age, id);
+
+        // Property shorthand 
+        // let user = {
+        //     'user-name': "John",
+        //     id: 17,
+        //     age: 40,
+        
+        //     price
+        // };
+
+        // Method shorthand
+        // let user = {
+        //     'user-name': "John",
+        //     id: 17,
+        //     age: 40,
+        //     price: price
+
+        //     displayPrice() {
+        //         return `$${this.price}`;
+        //     }
+        // };
+
+    </script>
+</body>
+</html>

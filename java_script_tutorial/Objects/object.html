@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Object</title>
+</head>
+<body>
+
+    <script>
+        // Syntax: 
+        // let obj_name = {
+        //     key: value  // property
+        // };
+
+        // To Access: 
+        // 1) using dot 
+        //  obj_name.key;
+        // 2) using []
+        //     obj_name["key"]
+
+        // To delete value use delete
+
+        let user = {
+            'user-name': "John",
+            age: 40,
+        };
+
+        console.log(user);
+        console.log(user['user-name']); // used if key name has - eg. user-name 
+
+        user.age = 50;
+
+        console.log(user.age);
+
+        delete user.age;
+        console.log(user);
+
+        // Inside object
+        let product = {
+
+            name: 'user', // string
+            id: 34,       // integer
+            rating: {     // object
+                stars: 4.5, 
+            },
+            displayPrice: function(){  // method
+                return `$${this.id.toFixed(2)}`;  // this means given object
+            }
+        };
+    </script>
+
+</body>
+</html>

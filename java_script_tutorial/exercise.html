@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #count-click {
+            height: 40px;
+            width: 70px;
+            font-size: 25px;
+            border: none;
+            border-radius: 7px;
+
+        }
+
+        .js-odd{
+            background-color: chocolate;
+        }
+
+        .js-even {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="greeting"></h3>
+    <button id="count-click" onclick="count()">0</button>
+    <script>
+
+        function greeting(name){
+            let date = new Date();
+            let hour = date.getHours();
+            let msg = document.querySelector('#greeting');
+
+            if (hour > 5  && hour < 12){
+                msg.innerText = `Good Morning, ${name}`;
+            }else if (hour > 12 && hour < 18) {
+                msg.innerText = `Good Afternoon, ${name}`;     
+
+            }else{
+                msg.innerText = ` Night, ${name}`;
+            }
+        }
+
+        greeting('Yash');
+
+
+        // Button code
+        let Count = localStorage.getItem('Count') || 0;
+        function count (){
+            Count++;
+            localStorage.setItem('Count', Count)
+            updateButton();
+            
+        }
+
+        function updateButton(){
+            if (Count % 2 === 0){
+                document.querySelector('#count-click').classList.remove('js-odd');
+                document.querySelector('#count-click').classList.add('js-even');
+            }else{
+                document.querySelector('#count-click').classList.remove('js-even');
+                document.querySelector('#count-click').classList.add('js-odd');
+            }
+            document.querySelector('#count-click').innerText = Count ;
+        }
+
+        updateButton();
+    </script>
+</body>
+</html>

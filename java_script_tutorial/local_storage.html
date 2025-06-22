@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    localStorage :- permanantly store data 
+    <script>
+        // localStorage.setItem('Name', 'KG Coding');
+        // localStorage.setItem('Price', '87656');
+        // console.log(localStorage.getItem('Name'));
+
+        let product = {
+        name: 'TShirt',
+        price: 789,
+        rating: {
+            stars: 4.5,
+            noOfReviews: 453,
+            },
+        };
+
+   
+    // localStorage.setItem('product', JSON.stringify(product));
+    // let product2 = JSON.parse(localStorage.getItem('product'));
+    // console.log(product2);
+    //localStorage.removeItem('Price');   To delete any key value
+    localStorage.clear();  // To delete all key value
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+
+}
+
+body {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.heading {
+    color: white;
+    margin: 1.5rem;
+}
+
+.heading h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.heading p {
+    font-size: 1.25rem;
+    opacity: 0.6;
+}
+
+.search {
+    height: 3.5rem;
+    width: 490px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1.2rem;
+    
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.26);
+
+}
+
+.search input {
+    flex: 1;
+    border-radius: 1.2rem 0 0 1.2rem;   /*border-radius: top-left top-right bottom-right bottom-left;
+*/
+    text-align: left;
+    font-size: larger;
+    border: none;
+    background-color: white;
+    padding: 1rem;
+    
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #ffffff; /* subtle custom border */
+}
+
+
+
+.search button {
+    border: none;
+    width: 5rem;
+   border-radius: 0 1.2rem 1.2rem 0;
+    cursor: pointer;
+    background: linear-gradient(135deg, #94a4ec 0%, #c398ee 100%);
+    
+}
+
+.search button img {
+    color: white;
+}
+.weather-info-container {
+    width: 450px;
+    height: 65vh;
+    position: relative;
+    margin: 2rem auto;
+    border-radius: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.26);
+    border: none;
+    padding: 1.5rem;
+
+    
+}
+
+.title h2 {
+    text-align: left;
+    margin-left: 0.75rem;
+}
+
+.city-name {
+    display: flex;
+    /* align-items: flex-start; */
+        /* border: 1px solid red; */
+
+}
+
+.city-name p {
+    flex: 1;
+    opacity: 0.5;
+    margin: 1rem 0;
+
+}
+
+.city-name img {
+    width: 5rem;
+    /* border: 1px solid red; */
+    margin-bottom: 2rem;
+    height: 3;
+}
+
+.temp-display  {
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+.temp-display sub  {
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0.4;
+    
+
+}
+
+.temp-display h1{
+    padding: 1rem;
+}
+
+.temp-display p  {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.9;
+    margin: 1rem;
+}
+
+.extra-info {
+    height: 250px;
+    border-top: 1px solid rgb(224, 224, 224);
+    border-bottom: 1px solid rgb(224, 224, 224);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    padding: 1rem 0;
+
+}
+
+.extra-info .box {
+    width: 45%;
+    height: 40%;
+    border: 1px solid black;
+}
+
+
+.last-update {
+    text-align: center;
+    padding: 1.5rem;
+    opacity: 0.5;
+}
+
+
+.footer {
+    color: #ffffff;
+    opacity: 0.8;
+}

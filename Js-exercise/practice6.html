@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    JS (Part 6)
+Practice Questions
+
+    <script>
+        // Qs1. Write a JavaScript function that returns array elements larger than a number.
+
+        // let arr = [1, 2, 3, 4, 85, 6, 2, 3];
+        // let num = 3;
+        
+        //  function largestElement(array, num){
+        //     let largestNUms = [];
+            
+        //     for(let i = 0; i < array.length; i++){
+
+        //         if ( array[i] > num ){
+        //             largestNUms.push(array[i]);
+                    
+        //         }
+        //     }
+        //     return largestNUms;
+        //  }
+
+        //  console.log(largestElement(arr, num));
+
+        // Qs2. Write a JavaScript function to extract unique characters from a string.
+        // Example: str = “abcdabcdefgggh” ans = “abcdefgh”
+
+        // let str = 'abcdabcdefgggh';
+        // function uniqueChar(str){
+        //     let ans = '';
+        //     for(let i = 0; i < str.length; i++){
+        //         let currChar = str[i];
+        //         if(ans.indexOf(currChar) == -1){
+        //             ans += currChar;
+        //         }
+        //     }
+        //     return ans;
+        // }
+
+        // console.log(uniqueChar(str));
+
+        // Qs3. Write a JavaScript function that accepts a list of country names as input and
+        // returns the longest country name as output.
+        // Example : country = ["Australia", "Germany", "United States of America"] output :
+        // "United States of America"
+
+        // let country = ["Australia", "Germany", "United States of America"];
+
+        // function largestCountryName (list){
+        //     let maxLength = 0;
+           
+
+        //     for (let i = 0; i < list.length; i++){
+        //         if ( list[i].length > maxLength ){
+
+        //             maxLength = list[i].length;
+        //             let name = list[i];
+        //         }
+        //     }
+        //     return name;
+        // }
+
+        // console.log(largestCountryName(country));
+
+        // Qs4. Write a JavaScript function to count the number of vowels in a String
+        //     argument.
+
+        // let str = 'abcdefghi';
+
+        // function countVowels(str){
+
+        //     let count = 0;
+        //     for (let i = 0; i < str.length; i++){
+        //             if (str.charAt(i) == "a" ||
+        //                 str.charAt(i) == "e" ||
+        //                 str.charAt(i) == "i" ||
+        //                 str.charAt(i) == "o" ||
+        //                 str.charAt(i) == "u"
+        //             ) {
+        //                 count++;
+        //             }
+        //     }
+
+        //     return count;
+        // }
+
+        // console.log(countVowels(str));
+
+        // Qs5. Write a JavaScript function to generate a random number within a range
+        // (start, end)    
+
+        let start = 100;
+        let end = 200;
+
+
+        function generateRandom(start, end) {
+
+            let diff = end - start;
+
+            return Math.floor(Math.random() * diff) + start;
+
+        }
+
+        console.log(generateRandom(start, end));
+
+    </script>
+</body>
+</html>

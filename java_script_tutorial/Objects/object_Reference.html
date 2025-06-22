@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let a = 5;
+        let b = a;     // b is a copy of a
+        console.log(`a=${a}, b=${b}`);
+
+        a = 8;
+        console.log(`a=${a}, b=${b}`);
+
+        let x = {num: 5};
+        let y = x;     // y is a reference to x
+        console.log(`x=${x.num}, y=${y.num}`);
+
+        x.num = 8;
+        console.log(`x=${x.num}, y=${y.num}`);
+
+        let p = { no: 6};
+        let q = { no: 6};
+        console.log(p == q); // False it compare reference (address)
+        console.log(p === q); // False it compare reference (address)
+
+
+    </script>
+</body>
+</html>

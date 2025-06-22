@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    JavaScript Object Notation
+
+    <script>
+        //same as js object . key also has "" 
+        // js Object                    JSON
+        // {name: "sam",                 {"name": "sam",
+        //  age: 39                       "age": 39
+        // }                               }
+        
+        //  // js obj -> JSON
+        //  JSON.parse();
+
+        //  // JSON -> js obj
+        //  JSON.stringify();
+         
+         let product = {
+      name: 'TShirt',
+      price: 789,
+      rating: {
+        stars: 4.5,
+        noOfReviews: 453,
+      },
+    };
+    console.log(typeof product);
+    console.log(product);
+    let str = JSON.stringify(product);
+    console.log(typeof str);
+    console.log(str);
+
+    let newProduct = JSON.parse(str);
+    console.log(typeof newProduct);
+    console.log(newProduct);
+
+
+    </script>
+</body>
+</html>
