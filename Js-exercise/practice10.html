@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #box {
+      width: 200px;
+      height: 100px;
+      background-color: skyblue;
+      text-align: center;
+      line-height: 100px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+    JS (Part 10)
+Practice Questions
+
+    <!-- <div id="box">Hover me</div>
+    <input type="text" placeholder="Press any key" />
+    <p id="scrollMsg">Scroll down the page</p> -->
+
+
+    <!-- <input type="text" id="nameInput" placeholder="enter your name" />
+    <h2 id="nameHeading"></h2> -->
+<script>
+    // Qs1. Try out the following events in Event Listener on your own :
+    // - mouseout
+    // - keypress
+    // - Scroll
+    // - load
+    // [Use MDN for help]
+
+
+        // mouseout event
+        // document.getElementById("box").addEventListener("mouseout", () => {
+        //     alert("Mouse left the box!");
+        // });
+
+        // // keypress event
+        // document.querySelector("input").addEventListener("keypress", (e) => {
+        //     console.log(`You pressed: ${e.key}`);
+        // });
+
+        // // scroll event
+        // window.addEventListener("scroll", () => {
+        //     document.getElementById("scrollMsg").innerText = "You scrolled!";
+        // });
+
+        // // load event
+        // window.addEventListener("load", () => {
+        //     console.log("Page is fully loaded!");
+        // });
+
+    
+    
+    // Qs2. Create a button on the page using JavaScript. Add an event listener to the button
+    // that changes the button’s color to green when it is clicked.
+    
+    // const btn = document.createElement("button");
+    // btn.textContent = "Click me";
+    // document.body.appendChild(btn);
+
+    // // Add click event
+    // btn.addEventListener("click", () => {
+    //     btn.style.backgroundColor = "green";
+    // });
+    
+    
+    
+    // Qs3. Create an input element on the page with a placeholder ”enter your name” and an
+    // H2 heading on the page inside HTML.
+    // The purpose of this input element is to enter a user’s name so it should only input
+    // letters from a-z, A-Z and space (all other characters should not be detected).
+    // Whenever the user inputs their name, their input should be dynamically visible inside
+    // the heading.
+    // [Please note that no other character apart from the allowed characters should be
+    // visible in the heading]
+
+
+    // const input = document.getElementById("nameInput");
+    // const heading = document.getElementById("nameHeading");
+
+    // input.addEventListener("input", () => {
+    //     // Remove all characters except letters and spaces
+    //     const cleanValue = input.value.replace(/[^a-zA-Z ]/g, "");
+    //     heading.textContent = cleanValue;
+    // });
+
+</script>
+</body>
+</html>
