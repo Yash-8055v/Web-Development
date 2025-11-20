@@ -36,13 +36,7 @@ web dev/
 
 - **HTML5**
 - **CSS3**
-- **JavaScript (Vanilla JS)**
-
----
-
-## 🌱 Status
-
-This is a **work-in-progress** learning repo — I’ll be adding new folders, features, and improvements as I continue learning web development.
+- **JavaScript (Vanilla JS)
 
 ---
 
